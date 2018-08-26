@@ -1,0 +1,110 @@
+.button{
+    width: em(313);
+    height: em(63);
+    border: 1px solid #ececec;
+    border-radius: em(32);
+    background-color: $white;
+    box-shadow: em(0) em(5) em(10) #dcdcdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: em(22);
+    &_widthl{
+        width: em(344);
+        box-shadow: none;
+        border: 2px solid #e6e6e6;
+    }
+
+    &_widths{
+        box-shadow: none;
+        width: em(288);
+        height: em(63); 
+    }
+
+    &_widthm{
+        box-shadow: none;
+        width: em(313);
+        height: em(63);
+    }
+
+    &_widthxl{
+        box-shadow: none;
+        width: em(320);
+        height: em(63);
+        border-radius: em(32);
+        font-size: em(20);
+        font-size: 0.83289953149vw;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    span{  
+        font-size: em(20);
+        font-family: proximanova;
+        font-weight: 600;
+        color: $greytext;
+        text-transform: uppercase;
+        color: $greytext;
+    }
+}
+
+.button:active{
+    box-shadow: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .button{
+        width: em(451);
+        height: em(98);
+        border-radius: em(49);
+        margin-right: 0;
+        box-shadow: em(0) em(5) em(10) #dcdcdc;
+
+        a{
+            text-decoration: none;
+        }
+        
+        span{  
+            font-size: em(27);
+        }
+
+        &_widthl{
+            width: em(450);
+            height: em(98);
+            border: 1px solid #ededed;
+            margin-left: em(39);
+        }
+
+        &_widths{
+            box-shadow: none;
+            width: em(496);
+            height: em(130);
+            border-radius: em(65); 
+                span{
+                    font-size: em(36);
+                }
+        }
+    
+        &_widthm{
+            box-shadow: none;
+            width: em(496);
+            height: em(130);
+            border-radius: em(65); 
+                span{
+                    font-size: em(36);
+                }
+        }
+
+        &_widthxl{
+            box-shadow: none;
+            width: em(561);
+            height: em(130);
+            border-radius: em(65); 
+                span{
+                    font-size: em(36);
+                }
+        }
+    }
+}

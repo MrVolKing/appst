@@ -1,0 +1,400 @@
+extends ../template
+
+block varibles
+    - var title = "Добро Пожаловать"
+
+block content
+   
+    .content
+        include ../common/header.pug
+
+        section.sectiontitlecontent
+            .main
+                .sectiontitle
+                    .sectiontitle__titleblock
+                        span.maintitle Студия разработки 
+                            br
+                            | мобильных приложений 
+                            br
+                            | для стартап проектов и бизнеса
+                    .sectiontitle__buttonblock
+                        .button
+                            a(href="#")
+                                span заказать приложение
+                        .button.button_widthl
+                            a(href="#")
+                                span посмотреть портфолио
+                    .sectiontitle__btnup.hidden#btnup
+                        a(href="#")
+                            svg
+                                use(xlink:href="./images/sprite/sprite.svg#up")
+                    .sectiontitle__btnadjust
+                        a(href="#")
+                            svg
+                                use(xlink:href="./images/sprite/sprite.svg#pen")
+                include ../common/menu.pug
+
+        section.demonstrationcontent
+            .main
+                .demonstration 
+                    .demonstration__wrapper.demonstration__wrapper_bg1.hover                 
+                        .demonstration__wego 
+                            .demonstration__toptitleblock
+                                span.demonstration__toptitletext ui/ux, ios, back-end, rest api
+                            .demonstration__nameblock
+                                span.demonstration__nametext WeGO
+                            .demonstration__bottomtitleblock
+                                span.demonstration__bottomtitletext Discover events nearby
+                            .demonstration__descriptionblock
+                                .demonstration__description
+                                    span.demonstration__descriptiontext Тип: 
+                                        span.demonstration__descriptiontext2 Стартап проект
+                                .demonstration__description
+                                    span.demonstration__descriptiontext Город: 
+                                        span.demonstration__descriptiontext2 Москва
+                                .demonstration__description
+                                    span.demonstration__descriptiontext.dispnone Категория: 
+                                        span.demonstration__descriptiontext2 Социальные сети
+                                .demonstration__description
+                                    span.demonstration__descriptiontext.dispnone Объем проекта: 
+                                        span.demonstration__descriptiontext2 от 1 200 часов  
+                            .demonstration__buttongoblock.visibl  
+                                a(href="#")
+                                    img(src="./images/go.png", alt="")
+                            .demonstration__buttongoblock.hidden 
+                                 a(href="#")
+                                    img(src="./images/go1.png", alt="") 
+
+                    .demonstration__wrapper.demonstration__wrapper_bg2.wrapper2
+                        .demonstration__meaning
+                            .demonstration__toptitleblock
+                                span.demonstration__toptitletext ui/ux, ios, android, rest api
+                            .demonstration__nameblock.demonstration__nameblock_mrg
+                                span.demonstration__nametext Смыслография
+                            .demonstration__bottomtitleblock.demonstration__bottomtitleblock_mrg
+                                span.demonstration__bottomtitletext Приложение для аналитики маркетинговой активности
+                            .demonstration__descriptionblock
+                                .demonstration__description
+                                    span.demonstration__descriptiontext Тип: 
+                                        span.demonstration__descriptiontext2 Бизнес приложение
+                                .demonstration__description
+                                    span.demonstration__descriptiontext Город: 
+                                        span.demonstration__descriptiontext2 Москва
+                                .demonstration__description
+                                    span.demonstration__descriptiontext.dispnone Категория: 
+                                        span.demonstration__descriptiontext2 Бизнес
+                                .demonstration__description
+                                    span.demonstration__descriptiontext.dispnone Объем проекта: 
+                                        span.demonstration__descriptiontext2 от 500 часов
+                            .demonstration__buttongoblock.visibl  
+                                a(href="#")
+                                    img(src="./images/go.png", alt="")
+                            .demonstration__buttongoblock.hidden 
+                                 a(href="#")
+                                    img(src="./images/go2a.png", alt="")
+                        .demonstration__bgimg2  
+                            img(src="./images/phone2.png", alt="")
+
+                    .demonstration__wrapper.demonstration__wrapper_bg3
+                        .demonstration__ibi
+                            .demonstration__toptitleblock
+                                span.demonstration__toptitletext ui/ux, android
+                            .demonstration__nameblock.demonstration__nameblock_mrg
+                                span.demonstration__nametext ibibook
+                            .demonstration__bottomtitleblock.demonstration__bottomtitleblock_mrg
+                                span.demonstration__bottomtitletext Справочник нового поколения
+                            .demonstration__descriptionblock
+                                .demonstration__description
+                                    span.demonstration__descriptiontext Тип: 
+                                        span.demonstration__descriptiontext2 Стартап проект
+                                .demonstration__description
+                                    span.demonstration__descriptiontext Город: 
+                                        span.demonstration__descriptiontext2 Астана
+                                .demonstration__description
+                                    span.demonstration__descriptiontext.dispnone Категория: 
+                                        span.demonstration__descriptiontext2 Справочники
+                                .demonstration__description
+                                    span.demonstration__descriptiontext.dispnone Объем проекта: 
+                                        span.demonstration__descriptiontext2 от 500 часов
+                            .demonstration__buttongoblock.visibl  
+                                a(href="#")
+                                    img(src="./images/go.png", alt="")
+                            .demonstration__buttongoblock.hidden 
+                                 a(href="#")
+                                    img(src="./images/go3.png", alt="")
+
+                    .demonstration__wrapper.demonstration__wrapper_bg4
+                        .demonstration__younell
+                            .demonstration__toptitleblock
+                                span.demonstration__toptitletext ui/ux, ios, back-end, rest api
+                            .demonstration__nameblock.demonstration__nameblock_mrg
+                                span.demonstration__nametext YOUNell
+                            .demonstration__bottomtitleblock.demonstration__bottomtitleblock_mrg
+                                span.demonstration__bottomtitletext Академия питанияи коррекции веса
+                            .demonstration__descriptionblock
+                                .demonstration__description
+                                    span.demonstration__descriptiontext Тип: 
+                                        span.demonstration__descriptiontext2 Стартап проект
+                                .demonstration__description
+                                    span.demonstration__descriptiontext Город: 
+                                        span.demonstration__descriptiontext2 Москва
+                                .demonstration__description
+                                    span.demonstration__descriptiontext.dispnone Категория: 
+                                        span.demonstration__descriptiontext2 Здоровье и фитнес
+                                .demonstration__description
+                                    span.demonstration__descriptiontext.dispnone Объем проекта: 
+                                        span.demonstration__descriptiontext2 от 700 часов
+                            .demonstration__buttongoblock.visibl  
+                                a(href="#")
+                                    img(src="./images/go.png", alt="")
+                            .demonstration__buttongoblock.hidden 
+                                 a(href="#")
+                                    img(src="./images/go4.png", alt="")
+                        .demonstration__bgimg4  
+                            img(src="./images/phone4.png", alt="")
+
+                    .demonstration__wrapper.demonstration__wrapper_bg5
+                        .demonstration__night2day
+                            .demonstration__toptitleblock
+                                span.demonstration__toptitletext ui/ux, ios,, rest api
+                            .demonstration__nameblock.demonstration__nameblock_mrg
+                                span.demonstration__nametext Night2Day
+                            .demonstration__bottomtitleblock.demonstration__bottomtitleblock_mrg
+                                span.demonstration__bottomtitletext В ритме жизни
+                            .demonstration__descriptionblock
+                                .demonstration__description
+                                    span.demonstration__descriptiontext Тип: 
+                                        span.demonstration__descriptiontext2 Бизнес приложение
+                                .demonstration__description
+                                    span.demonstration__descriptiontext Город: 
+                                        span.demonstration__descriptiontext2 Москва
+                                .demonstration__description
+                                    span.demonstration__descriptiontext.dispnone Категория: 
+                                        span.demonstration__descriptiontext2 Развлечения
+                                .demonstration__description
+                                    span.demonstration__descriptiontext.dispnone Объем проекта: 
+                                        span.demonstration__descriptiontext2 от 300 часов
+                            .demonstration__buttongoblock.visibl  
+                                a(href="#")
+                                    img(src="./images/go.png", alt="")
+                            .demonstration__buttongoblock.hidden 
+                                 a(href="#")
+                                    img(src="./images/go5.png", alt="")
+                        .demonstration__bgimg5  
+                            img(src="./images/phone5.png", alt="")
+                        .demonstration__bgimg5phone 
+                            img(src="./images/phone5phone.png", alt="")
+
+                    .demonstration__wrappersecond
+                        .demonstration__30attachment
+                            .demonstration__buttongoblock.demonstration__buttongoblock_mrg0
+                                a(href="#")
+                                    img(src="./images/go2.png", alt="")
+                
+        section.aboutcontent
+            .main 
+                .about
+                    .about__titleblock  
+                        span.title AppsStudio это
+                    .about__blockstatistics
+                        .about__block
+                            .about__numberblock
+                                img.about__number1(src="./images/5.png", alt="")
+                            .about__title
+                                span.about__titletext Лет на рынке
+                            .about__descriptionblock
+                                span.about__descriptiontext Опыт реализации высоконагруженных и объемных проектов
+                        .about__block.about__block_padd1
+                            .about__numberblock
+                                img.about__number2(src="./images/i/1.svg", alt="")
+                                img.about__number3(src="./images/i/2.svg", alt="")
+                            .about__title
+                                span.about__titletext Месяцев
+                            .about__descriptionblock
+                                span.about__descriptiontext Бесплатной технической поддержки после разработки
+                        .about__block.about__block_padd2
+                            .about__numberblock
+                                img.about__number4(src="./images/i/1073.svg", alt="")
+                            .about__title.about__title_mrg
+                                span.about__titletext Дней
+                            .about__descriptionblock.about__descriptionblock_mrg
+                                span.about__descriptiontext В среднем клиенты продолжают развивать свои идеи с нами
+                        .about__block.about__block_padd3
+                            .about__numberblock
+                                img.about__number5(src="./images/i/8.svg", alt="")
+                                img.about__number6(src="./images/i/2.svg", alt="")
+                                img.about__number7(src="./images/i/pr.svg", alt="")
+                            .about__title
+                                span.about__titletext Показатель
+                            .about__descriptionblock
+                                span.about__descriptiontext У разработанных нами приложений рейтинг 4 звезды и выше
+
+        section.cyclecontent
+            .main
+                .cycle   
+                    .cycle__supertitleblock
+                        span.supertitle.supertitle_grey AppsStudio
+                    .cycle__titleblock
+                        span.title Полный цикл 
+                            br
+                            | студии разработки 
+                            br
+                            | мобильных приложений
+                    .cycle__blockblocks
+                        .cycle__block
+                            .cycle__number
+                                span.cycle__numbertext 01
+                            .cycle__icon
+                                img.cycle__icon1(src="./images/icon1.png", alt="")
+                            .cycle__descriptionblock
+                                span.cycle__descriptiontext Проектирование 
+                                    br
+                                    | UI/UX
+                        .cycle__block
+                            .cycle__number
+                                span.cycle__numbertext 02
+                            .cycle__icon
+                                img.cycle__icon2(src="./images/icon2.png", alt="")
+                            .cycle__descriptionblock
+                                span.cycle__descriptiontext Дизайн 
+                                    br
+                                    | UI/UX
+                        .cycle__block
+                            .cycle__number
+                                span.cycle__numbertext 03
+                            .cycle__icon
+                                img.cycle__icon3(src="./images/icon3.png", alt="")
+                            .cycle__descriptionblock
+                                span.cycle__descriptiontext Клиентская часть 
+                                    br
+                                    | (iOS, Android, UWP)
+                        .cycle__block
+                            .cycle__number
+                                span.cycle__numbertext 04
+                            .cycle__icon
+                                img.cycle__icon4(src="./images/icon4.png", alt="")
+                            .cycle__descriptionblock
+                                span.cycle__descriptiontext Серверная часть 
+                                    br
+                                    | (Веб-сервис, БД, RESTful API) 
+                        .cycle__block
+                            .cycle__number
+                                span.cycle__numbertext 05
+                            .cycle__icon
+                                img.cycle__icon3(src="./images/icon5.png", alt="")
+                            .cycle__descriptionblock
+                                span.cycle__descriptiontext Машинное обучение 
+                                    br
+                                    | (Нейронные сети, Deep Learning)
+                        .cycle__block
+                            .cycle__number
+                                span.cycle__numbertext 06
+                            .cycle__icon
+                                img.cycle__icon3(src="./images/icon6.png", alt="")
+                            .cycle__descriptionblock
+                                span.cycle__descriptiontext Интеграция со сторонними 
+                                    br
+                                    | API системами
+                        .cycle__block
+                            .cycle__number
+                                span.cycle__numbertext 07
+                            .cycle__icon
+                                img.cycle__icon7(src="./images/icon7.png", alt="")
+                            .cycle__descriptionblock
+                                span.cycle__descriptiontext Веб-сайт 
+                                    br
+                                    | (Админ-панель)
+                        .cycle__block
+                            .cycle__number
+                                span.cycle__numbertext 08
+                            .cycle__icon
+                                img.cycle__icon3(src="./images/icon8.png", alt="")
+                            .cycle__descriptionblock
+                                span.cycle__descriptiontext Тестирование и отладка 
+                                    br 
+                                    | QA/Q
+
+        section.conceptcontent
+            .main
+                .concept
+                    .concept__content
+                        .concept__left
+                            .concept__titleblock
+                                span.title.title_white Концепт приложения 
+                                    br
+                                    | для бизнеса 
+                                    br
+                                    | за 3 условия
+                            .concept__buttonblock
+                                .button.button_widths
+                                    a(href="#")
+                                        span подробнее
+                        .concept__right
+                            .concept__conceptblock
+                                .concept__nameblock
+                                    span.concept__nametext Концепт
+                                .concept__imgblock
+                                    img.concept__img(src="./images/concept.png", alt="")
+                            .concept__designblock
+                                .concept__nameblock
+                                    span.concept__nametext Дизайн
+                                .concept__imgblock
+                                    img.concept__img(src="./images/design.png", alt="")
+                    .concept__supertitleblock
+                        span.supertitle.supertitle_blue Kонцепция
+
+        section.discountcontent
+            .main
+                .discount 
+                    .discount__titleblock
+                        span.title.title_whitemini Скидка для стартап проекта  
+                            br
+                            | с объемом от 1 000 
+                            span.novi
+                            | часов
+                    .discount__content
+                        span.discount__contenttext
+                            span.novi Скидка
+                            |  300 000 
+                            span ₽
+                    .discount__blockbutton
+                        .button.button_widthm
+                            a(href="#")
+                                span подробнее
+        
+        section.assessmentcontent
+            .main
+                .assessment
+                    .assessment__titleblock
+                        span.title.title_assessment Заполнить бриф для оценки реально просто
+                    .assessment__manual
+                        span 1. Отметьте нужные платформы
+                        span 2. Укажите, чем занимаетесь, и на кого смотреть
+                        span 3. Опишите идею, либо прикрепите требования
+                    .assessment__blocklinkbuttons
+                        .assessment__linkblock
+                            a.assessment__aple(href="#") 
+                                img.assessment__img0(src="./images/i/aple.svg", alt="")
+                                span.assessment__text1 Скачать из 
+                                span.assessment__text2 App Store
+                        .assessment__linkblock
+                            a.assessment__play(href="#") 
+                                img.assessment__img1(src="./images/play.png", alt="")
+                                img.assessment__img2(src="./images/googleplay.png", alt="")
+                                span.assessment__text1 Доступно в
+
+        section.formcontent
+            include ../common/form.pug
+            
+        footer.footercontent
+            include ../common/footer.pug
+
+
+
+
+                
+
+
+                    
+
+                

@@ -1,0 +1,238 @@
+.footer{
+    position: relative;
+    display: flex;
+    padding: em(183) em(175) em(49) em(175);
+
+    &__logoblock{
+        img{
+            width: em(92);
+            height: em(65);
+        }
+        margin-bottom: em(70);
+    }
+
+    &__country{
+        margin-bottom: em(9);
+    }
+
+    &__countrytext{
+        font-size: em(22);
+        font-weight: 700;
+        color: $greytext;
+    }
+
+    &__address{
+        margin-bottom: em(37);
+    }
+
+    &__addresstext{
+        font-weight: 300;
+        color: $greytext;
+    }
+
+    &__blockcontact{
+        display: flex;
+        margin-bottom: em(28);
+    }
+
+    &__circllink{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: em(22);
+    }
+
+    &__blockimg{
+        width: em(52);
+        height: em(52);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e6e6e6;
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: em(0) em(6) em(7) em(0) #ececec;
+        margin-right: em(15);
+        &_r{
+            margin-right: em(14);
+            margin-left: 0;
+        }
+        .img1{
+            width: em(20);
+            height: em(20);
+        }
+
+        .img2{
+            width: em(22);
+            height: em(16);
+        }
+    }
+
+    &__number{
+        width: em(300);
+    }
+
+    &__numbertext1{
+        font-size: em(36);
+        font-weight: 300;
+        color: $greytext;
+    }
+
+    &__numbertext2{
+        font-size: em(36);
+        font-weight: 400;
+        color: $greytext;
+    }
+
+    &__linktext{
+        text-decoration: none;
+        font-size: em(38);
+        font-weight: 400;
+        color: $greytext;
+    }
+
+    &__copyrighttext{
+        font-size: em(14);
+        font-weight: 400;
+        color: $greytext;
+    }
+
+    &__right{
+        margin-left: em(325);
+    }
+
+    &__linksaveblock{
+        margin-top: em(208);
+        margin-left: em(50);
+    }
+
+    &__linkblock{ 
+        margin-bottom: em(8); 
+        width: em(109);
+        height: em(34);
+        background-color: #0e1010;
+        border: none;
+        border-radius: em(5);
+        position: relative;  
+    }
+
+    &__img0{
+        width: em(20);
+        height: em(21);
+        position: absolute;
+        top: em(6);
+        left: em(7);
+    }
+
+    &__text1{
+        position: absolute;
+        top: em(-2);
+        left: em(35);
+        span{
+            font-size: em(8.37);
+            color: $white;
+            font-weight: 600;
+        }
+    }
+
+    &__text2{
+        position: absolute;
+        top: em(14);
+        left: em(35);
+        span{
+            font-size: em(15.06);
+            color: $white;
+            font-weight: 600;
+        }
+    }
+
+    &__img1{
+        position: absolute;
+        top: em(6);
+        left: em(8);
+        width: em(21);
+        height: em(23);
+    }
+
+    &__img2{
+        position: absolute;
+        top: em(18);
+        left: em(36);
+        width: em(67);
+        height: em(16);
+    }
+
+    &__text3{
+        position: absolute;
+        top: em(-2);
+        left: em(36);
+        span{
+            color: $white;
+            font-weight: 600;
+            font-size: em(8.37);
+        }
+    }
+
+    &__linkiconsblock{
+        display: flex;
+        margin-top: em(23);
+    }
+
+    &__instagram{
+        width: em(29);
+        height: em(28);
+    }
+
+    &__twitter{
+        width: em(32);
+        height: em(27);
+    }
+
+    &__fb{
+        width: em(17);
+        height: em(28);
+    }
+
+    &__g{
+        width: em(40);
+        height: em(27);
+    }
+
+    &__you{
+        width: em(33);
+        height: em(25);
+    }
+
+    &__vk{
+        width: em(38);
+        height: em(22);
+    }
+
+}
+
+.bg{
+    position: absolute;
+    top: em(183);
+    right: em(155);
+    img{
+        width: em(208);
+        height: em(284);;
+    }
+}
+
+// @media screen and (max-width: 1475px) {
+    // .footer{
+        // background-position: right 13.2% top 61%;
+        // &__right{
+        //     margin-left: 221px;
+        // }
+
+        // &__linksaveblock{
+        //     margin-top: 161px;
+        // }
+
+        // &__you{
+        //     height: 21px;
+        // }
+//     }
+// }

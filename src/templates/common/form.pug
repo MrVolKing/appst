@@ -1,0 +1,28 @@
+texttextarea.main    
+    .form
+        .form__titleblock
+            span.title.title_letter Заказать разработку 
+                br
+                | мобильного приложения
+        .form__formblock
+            .form__left
+                .form__blockinput
+                    input.form__inputleft(type="text", placeholder="Ваше имя")
+                .form__blockinput
+                    input.form__inputleft(type="email", placeholder="Электронная почта")
+                .form__blockinput
+                    input.form__inputleft(type="text", placeholder="Телефон")
+                .form__blockinputfile
+                    label.form__label(for="inputleft")
+                        .form__inputfiletext
+                            span прикрепить файл
+                        //- .form__inputfiletextclip
+                        //-     img(src="../images/i/paperclip.svg", alt="")
+                        input.form__inputfile#inputfile(type="file")
+            .form__right
+                .form__textareablock
+                    textarea.form__textarea(placeholder="Напишите сообщение")
+                    //- .form__texttextarea
+                .form__blockbutton
+                    button(type="submit").button.button_widthxl
+                        span отправить

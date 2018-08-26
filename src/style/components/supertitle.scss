@@ -1,0 +1,18 @@
+.supertitle{
+    font-size: em(395);
+    font-family: proximanova;
+    font-weight: 900;
+    &_grey{
+        color: $whitegrey;
+    }
+
+    &_blue{
+        color: #008aff;;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .supertitle{
+        font-size: em(200);
+    }
+}

@@ -1,0 +1,183 @@
+.form{
+    padding: em(188) em(174) em(183) em(175);
+    background-color: #f4f4f4;
+    // font-size: 0.83289953149vw;
+
+
+    &__titleblock{
+        margin-bottom: em(100);
+    }
+
+    &__formblock{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // &__left{
+    //     width: 48%;
+    // }
+
+    // &__right{
+    //     height: 48%;
+    // }
+
+    &__inputleft{
+        width: 38.4vw;
+        height: em(28);
+        border: none;
+        border-bottom: 2px solid #9c9c9c;
+        background-color: #f4f4f4;
+        margin-bottom: em(70);
+        outline: none;
+        @include placeholder {
+            color: #6c6c6c;
+            font-weight: 300;
+            font-size: em(20);
+        }
+    }
+
+    &__blockinputfile{
+        display: flex;
+        justify-content: flex-end;
+        // margin-right: em(101);
+        margin-top: em(28);
+        
+    }
+
+    &__label::before{
+        content: '';
+        background-image: url(../images/paperclip.png);
+        background-size: em(15) em(16);
+        width: em(15);
+        height: em(16);
+        margin-right: em(7);
+    }
+
+    &__label{
+        display: flex;
+    }
+
+    &__inputfiletext{
+        // margin-left: em(7);
+        margin-left: em(5);
+        margin-top: em(2);
+        span{
+            font-size: em(18);
+            font-weight: 700;
+            line-height: em(17);
+            text-transform: uppercase;
+            color: $greytext;
+        }
+    }
+
+    &__inputfile{
+        display: none;
+    }
+
+    &__textareablock{
+        margin-bottom: em(58);
+    }
+
+    &__textarea{
+        border: none;
+        background-color: #f4f4f4;
+        border-bottom: 2px solid #9c9c9c;
+        width: 38.4vw;
+        height: em(224);
+        resize: none;
+        outline: none;
+        @include placeholder {
+            color: #6c6c6c;
+            font-weight: 300;
+            font-size: em(20);
+        }
+    }
+
+    &__texttextarea{
+        border: none;
+        background-color: #f4f4f4;
+        border-bottom: 2px solid #9c9c9c;
+        width: 38.4vw;
+        height: em(188);
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .form{
+        padding: em(171) em(73) em(184) em(69);
+        background-color: #f4f4f4;
+    
+        &__titleblock{
+            margin-bottom: em(66);
+        }
+    
+        &__formblock{
+            flex-direction: column;
+        }
+    
+        &__inputleft{
+            width: 86vw;
+            height: em(46);
+            border-bottom: 1px solid #9c9c9c;
+            margin-bottom: em(74);
+            @include placeholder {
+                font-size: em(40);
+            }
+        }
+    
+        &__blockinputfile{
+            position: absolute;
+            bottom: 0;
+            justify-content: flex-start;
+            // margin-right: em(101);
+            margin-top: em(28);
+            
+        }
+    
+        &__label::before{
+            content: '';
+            background-image: url(../images/paperclip.png);
+            background-size: em(29) em(30);
+            width: em(15);
+            height: em(16);
+            margin-right: em(7);
+        }
+    
+        &__inputfiletext{
+            // margin-left: em(7);
+            margin-left: em(5);
+            margin-top: em(2);
+            span{
+                font-size: em(30);
+                font-weight: 700;
+                line-height: em(17);
+                text-transform: uppercase;
+                color: $greytext;
+            }
+        }
+    
+        &__textareablock{
+            // margin-bottom: em(58);
+        }
+    
+        &__textarea{
+            border-bottom: 1px solid #9c9c9c;
+            width: 86vw;
+            height: em(46);
+            @include placeholder {
+                font-size: em(40);
+            }
+        }
+
+        &__blockbutton{
+            display: flex;
+            justify-content: flex-end;
+        }
+    
+    }
+    // адаптировать размер кнопки, и отступы от нее, адаптировать инпутфайл
+
+    
+}

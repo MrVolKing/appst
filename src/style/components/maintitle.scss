@@ -1,0 +1,14 @@
+.maintitle{
+    font-size: em(72);
+    font-family: proximanova;
+    font-weight: 900;
+    color: $greytext;
+    line-height: 1;
+
+}
+
+@media screen and (max-width: 1080px) {
+    .maintitle {
+        font-size: em(80);
+    }
+}
