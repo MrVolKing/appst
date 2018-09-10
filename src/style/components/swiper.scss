@@ -1,0 +1,15 @@
+.swiper-slide{
+    left: 4.5%;
+}
+
+@media screen and (max-width: 1366px) {
+    .swiper-slide{
+        left: 2.7%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .swiper-slide{
+        left: 0.48%;
+    }
+}

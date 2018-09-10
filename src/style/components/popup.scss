@@ -1,0 +1,100 @@
+/*Оформление*/
+.modalDialog {
+    position: fixed;
+    // font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // width: 100vw;
+    // height: 100vh;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+   }
+   /*Открытие*/
+   .modalDialog:target {
+    display: block;
+    pointer-events: auto;
+   }
+    
+   .modalDialog > div {
+    width: 80vw;
+    height: 40vw;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: #333333;
+     border: 2px solid #ff3333;
+   }
+   /*Закрытие окна*/
+   .close1 {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+   }
+    
+   .close:hover { background: #ff9933; }   
+   #send_info{color:#ffffff;font-size: 16px;}
+
+
+   .h{
+       position: relative;
+       margin-top: 500px;
+       font-size: 30px;
+   }
+
+
+
+// new popap
+
+
+*{
+    font-family: Areal;
+}
+// .b-container{
+//     width:200px;
+//     height:150px;
+//     background-color: #ccc;
+//     margin:0px auto;
+//     padding:10px;
+//     font-size:30px;
+//     color: #fff;
+// }
+.b-popup{
+    z-index: 12000;
+    width:100vw;
+    min-height:100vh;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    left: 0;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:100px;
+    height: 40px;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}

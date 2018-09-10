@@ -32,6 +32,12 @@ const paths = {
         src: 'src/images/**/*',
         dest: 'build/images'
     },
+
+    swiper: {
+        src: 'src/dist/**/*',
+        dest: 'build/dist'
+    },
+
     scripts: {
         src: 'src/scripts/**/*',
         dest: 'build/scripts'
@@ -63,6 +69,12 @@ function fonts () {
 function images () {
     return gulp.src(paths.images.src)
         .pipe(gulp.dest(paths.images.dest));
+}
+
+// Переносим swiper
+function swiper () {
+    return gulp.src(paths.swiper.src)
+        .pipe(gulp.dest(paths.swiper.dest));
 }
 
 //pug
@@ -162,11 +174,12 @@ exports.clean = clean;
 exports.images = images;
 exports.scripts = scripts;
 exports.sprite = sprite;
+exports.swiper = swiper;
 
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, images, scripts, sprite, fonts),
+    gulp.parallel(styles, templates, images, scripts, sprite, fonts, swiper),
     gulp.parallel(watch, server)
 ));
 

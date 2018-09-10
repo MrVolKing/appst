@@ -1,0 +1,117 @@
+.form{
+    padding-top: em(81);
+    padding-bottom: em(83);
+    display: flex;
+    justify-content: center;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // width: em(789);
+        // height: em(656);
+        padding: 0 em(29) 0 em(29);
+        box-shadow: 0 em(15) em(37) rgba(0, 0, 0, 0.06);
+    }
+
+    &__blocktitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: em(38);
+    }
+
+    &__blockdescription{
+        margin-top: em(39);
+        margin-bottom: em(68);
+        width: em(609);
+        margin-left: em(30);
+        text-align: center;
+        font-size: em(14);
+        p{
+            color: #a3a3a3;
+            line-height: em(21);
+            span{
+                font-size: em(15);
+                color: #4b4949;
+            }
+        }
+    }
+
+    &__inputblock{
+        text-align: center;
+        margin-bottom: em(23);
+        // margin-left: em(28);
+    }
+
+    &__input{
+        width: em(350);
+        height: em(47);
+        border: 1px solid #dde0e2;
+        background-color: #ffffff;
+        padding-left: em(20);
+        @include placeholder {
+            color: #c0c0c0;
+            // padding-left: em(20);
+        }
+    }
+
+    &__textareablock{
+        text-align: center;
+        margin-bottom: em(23);
+        textarea{
+            width: em(700);
+            height: em(174);
+            border: 1px solid #dde0e2;
+            background-color: #ffffff;
+            resize: none;
+            padding-top: em(20);
+            padding-left: em(20);
+            @include placeholder {
+                color: #c0c0c0;    
+            }
+        }
+    }
+
+    &__buttonblock{
+        display: flex;
+        justify-content: center;
+        margin-bottom: em(33);
+    }
+
+  
+}
+
+@media screen and (max-width: 767px) {
+    .form{
+        font-size: 2.271303vw;
+
+        &__blockdescription{
+            margin-left: 0;
+            p{
+                font-size: 15px;
+            }
+        }
+
+        &__blockform{
+            width: 100%;
+        }
+
+        &__inputblock{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__input{
+            width: 100%;
+            margin-bottom: 12px;
+            height: em(27);
+        }
+
+        textarea{
+            width: 100%;
+            height: em(98);
+        }
+    }
+}

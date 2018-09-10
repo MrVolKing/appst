@@ -1,0 +1,24 @@
+
+
+.wrapper{
+    padding: 0 em(105) 0 em(101);
+    font-size: 0.8333333vw;
+    position: relative;
+}  
+
+
+@media screen and (max-width: 1366px) { 
+    .wrapper {
+        font-size: 1.1713031vw;
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    .wrapper {
+        padding: 0;
+        // font-size: 1.5860495vw;
+    }
+}
+
+
+

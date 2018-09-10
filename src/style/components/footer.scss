@@ -1,0 +1,21 @@
+.footer{
+    &__block{
+        padding: em(31) 0;
+        background-color: #503c3c;
+        width: 100%;
+        text-align: center;
+        span{
+            color: $white;
+            font-size: em(14);
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .footer{
+        span{
+            font-size: 11px;
+        }
+    }
+}

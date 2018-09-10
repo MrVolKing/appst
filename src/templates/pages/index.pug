@@ -6,395 +6,417 @@ block varibles
 block content
    
     .content
-        include ../common/header.pug
-
-        section.sectiontitlecontent
-            .main
-                .sectiontitle
-                    .sectiontitle__titleblock
-                        span.maintitle Студия разработки 
-                            br
-                            | мобильных приложений 
-                            br
-                            | для стартап проектов и бизнеса
-                    .sectiontitle__buttonblock
-                        .button
-                            a(href="#")
-                                span заказать приложение
-                        .button.button_widthl
-                            a(href="#")
-                                span посмотреть портфолио
-                    .sectiontitle__btnup.hidden#btnup
-                        a(href="#")
-                            svg
-                                use(xlink:href="./images/sprite/sprite.svg#up")
-                    .sectiontitle__btnadjust
-                        a(href="#")
-                            svg
-                                use(xlink:href="./images/sprite/sprite.svg#pen")
-                include ../common/menu.pug
-
-        section.demonstrationcontent
-            .main
-                .demonstration 
-                    .demonstration__wrapper.demonstration__wrapper_bg1.hover                 
-                        .demonstration__wego 
-                            .demonstration__toptitleblock
-                                span.demonstration__toptitletext ui/ux, ios, back-end, rest api
-                            .demonstration__nameblock
-                                span.demonstration__nametext WeGO
-                            .demonstration__bottomtitleblock
-                                span.demonstration__bottomtitletext Discover events nearby
-                            .demonstration__descriptionblock
-                                .demonstration__description
-                                    span.demonstration__descriptiontext Тип: 
-                                        span.demonstration__descriptiontext2 Стартап проект
-                                .demonstration__description
-                                    span.demonstration__descriptiontext Город: 
-                                        span.demonstration__descriptiontext2 Москва
-                                .demonstration__description
-                                    span.demonstration__descriptiontext.dispnone Категория: 
-                                        span.demonstration__descriptiontext2 Социальные сети
-                                .demonstration__description
-                                    span.demonstration__descriptiontext.dispnone Объем проекта: 
-                                        span.demonstration__descriptiontext2 от 1 200 часов  
-                            .demonstration__buttongoblock.visibl  
+        header.headercontent
+            .wrapper
+                .header
+                    .header__left
+                        .header__menublock#trust
+                        .header__menu
+                            a(href="./index.html") home
+                        .header__menu
+                            a(href="#about") about us
+                        .header__menu
+                            a(href="#packages") packages
+                        .header__menu
+                            a(href="#fqu") faq
+                        .header__menu
+                            a(href="#contact") contacts   
+                    .header__right
+                        .header__phoneblock
+                            .header__imgblock   
+                                img(src="./images/call.png", alt="")
+                                .header__phonetext
+                                    span Phone:
+                            .header__number
+                                span (093) 555 73 78
+                        .header__buttonblock
+                            .button
                                 a(href="#")
-                                    img(src="./images/go.png", alt="")
-                            .demonstration__buttongoblock.hidden 
-                                 a(href="#")
-                                    img(src="./images/go1.png", alt="") 
-
-                    .demonstration__wrapper.demonstration__wrapper_bg2.wrapper2
-                        .demonstration__meaning
-                            .demonstration__toptitleblock
-                                span.demonstration__toptitletext ui/ux, ios, android, rest api
-                            .demonstration__nameblock.demonstration__nameblock_mrg
-                                span.demonstration__nametext Смыслография
-                            .demonstration__bottomtitleblock.demonstration__bottomtitleblock_mrg
-                                span.demonstration__bottomtitletext Приложение для аналитики маркетинговой активности
-                            .demonstration__descriptionblock
-                                .demonstration__description
-                                    span.demonstration__descriptiontext Тип: 
-                                        span.demonstration__descriptiontext2 Бизнес приложение
-                                .demonstration__description
-                                    span.demonstration__descriptiontext Город: 
-                                        span.demonstration__descriptiontext2 Москва
-                                .demonstration__description
-                                    span.demonstration__descriptiontext.dispnone Категория: 
-                                        span.demonstration__descriptiontext2 Бизнес
-                                .demonstration__description
-                                    span.demonstration__descriptiontext.dispnone Объем проекта: 
-                                        span.demonstration__descriptiontext2 от 500 часов
-                            .demonstration__buttongoblock.visibl  
-                                a(href="#")
-                                    img(src="./images/go.png", alt="")
-                            .demonstration__buttongoblock.hidden 
-                                 a(href="#")
-                                    img(src="./images/go2a.png", alt="")
-                        .demonstration__bgimg2  
-                            img(src="./images/phone2.png", alt="")
-
-                    .demonstration__wrapper.demonstration__wrapper_bg3
-                        .demonstration__ibi
-                            .demonstration__toptitleblock
-                                span.demonstration__toptitletext ui/ux, android
-                            .demonstration__nameblock.demonstration__nameblock_mrg
-                                span.demonstration__nametext ibibook
-                            .demonstration__bottomtitleblock.demonstration__bottomtitleblock_mrg
-                                span.demonstration__bottomtitletext Справочник нового поколения
-                            .demonstration__descriptionblock
-                                .demonstration__description
-                                    span.demonstration__descriptiontext Тип: 
-                                        span.demonstration__descriptiontext2 Стартап проект
-                                .demonstration__description
-                                    span.demonstration__descriptiontext Город: 
-                                        span.demonstration__descriptiontext2 Астана
-                                .demonstration__description
-                                    span.demonstration__descriptiontext.dispnone Категория: 
-                                        span.demonstration__descriptiontext2 Справочники
-                                .demonstration__description
-                                    span.demonstration__descriptiontext.dispnone Объем проекта: 
-                                        span.demonstration__descriptiontext2 от 500 часов
-                            .demonstration__buttongoblock.visibl  
-                                a(href="#")
-                                    img(src="./images/go.png", alt="")
-                            .demonstration__buttongoblock.hidden 
-                                 a(href="#")
-                                    img(src="./images/go3.png", alt="")
-
-                    .demonstration__wrapper.demonstration__wrapper_bg4
-                        .demonstration__younell
-                            .demonstration__toptitleblock
-                                span.demonstration__toptitletext ui/ux, ios, back-end, rest api
-                            .demonstration__nameblock.demonstration__nameblock_mrg
-                                span.demonstration__nametext YOUNell
-                            .demonstration__bottomtitleblock.demonstration__bottomtitleblock_mrg
-                                span.demonstration__bottomtitletext Академия питанияи коррекции веса
-                            .demonstration__descriptionblock
-                                .demonstration__description
-                                    span.demonstration__descriptiontext Тип: 
-                                        span.demonstration__descriptiontext2 Стартап проект
-                                .demonstration__description
-                                    span.demonstration__descriptiontext Город: 
-                                        span.demonstration__descriptiontext2 Москва
-                                .demonstration__description
-                                    span.demonstration__descriptiontext.dispnone Категория: 
-                                        span.demonstration__descriptiontext2 Здоровье и фитнес
-                                .demonstration__description
-                                    span.demonstration__descriptiontext.dispnone Объем проекта: 
-                                        span.demonstration__descriptiontext2 от 700 часов
-                            .demonstration__buttongoblock.visibl  
-                                a(href="#")
-                                    img(src="./images/go.png", alt="")
-                            .demonstration__buttongoblock.hidden 
-                                 a(href="#")
-                                    img(src="./images/go4.png", alt="")
-                        .demonstration__bgimg4  
-                            img(src="./images/phone4.png", alt="")
-
-                    .demonstration__wrapper.demonstration__wrapper_bg5
-                        .demonstration__night2day
-                            .demonstration__toptitleblock
-                                span.demonstration__toptitletext ui/ux, ios,, rest api
-                            .demonstration__nameblock.demonstration__nameblock_mrg
-                                span.demonstration__nametext Night2Day
-                            .demonstration__bottomtitleblock.demonstration__bottomtitleblock_mrg
-                                span.demonstration__bottomtitletext В ритме жизни
-                            .demonstration__descriptionblock
-                                .demonstration__description
-                                    span.demonstration__descriptiontext Тип: 
-                                        span.demonstration__descriptiontext2 Бизнес приложение
-                                .demonstration__description
-                                    span.demonstration__descriptiontext Город: 
-                                        span.demonstration__descriptiontext2 Москва
-                                .demonstration__description
-                                    span.demonstration__descriptiontext.dispnone Категория: 
-                                        span.demonstration__descriptiontext2 Развлечения
-                                .demonstration__description
-                                    span.demonstration__descriptiontext.dispnone Объем проекта: 
-                                        span.demonstration__descriptiontext2 от 300 часов
-                            .demonstration__buttongoblock.visibl  
-                                a(href="#")
-                                    img(src="./images/go.png", alt="")
-                            .demonstration__buttongoblock.hidden 
-                                 a(href="#")
-                                    img(src="./images/go5.png", alt="")
-                        .demonstration__bgimg5  
-                            img(src="./images/phone5.png", alt="")
-                        .demonstration__bgimg5phone 
-                            img(src="./images/phone5phone.png", alt="")
-
-                    .demonstration__wrappersecond
-                        .demonstration__30attachment
-                            .demonstration__buttongoblock.demonstration__buttongoblock_mrg0
-                                a(href="#")
-                                    img(src="./images/go2.png", alt="")
-                
-        section.aboutcontent
-            .main 
-                .about
-                    .about__titleblock  
-                        span.title AppsStudio это
-                    .about__blockstatistics
-                        .about__block
-                            .about__numberblock
-                                img.about__number1(src="./images/5.png", alt="")
-                            .about__title
-                                span.about__titletext Лет на рынке
-                            .about__descriptionblock
-                                span.about__descriptiontext Опыт реализации высоконагруженных и объемных проектов
-                        .about__block.about__block_padd1
-                            .about__numberblock
-                                img.about__number2(src="./images/i/1.svg", alt="")
-                                img.about__number3(src="./images/i/2.svg", alt="")
-                            .about__title
-                                span.about__titletext Месяцев
-                            .about__descriptionblock
-                                span.about__descriptiontext Бесплатной технической поддержки после разработки
-                        .about__block.about__block_padd2
-                            .about__numberblock
-                                img.about__number4(src="./images/i/1073.svg", alt="")
-                            .about__title.about__title_mrg
-                                span.about__titletext Дней
-                            .about__descriptionblock.about__descriptionblock_mrg
-                                span.about__descriptiontext В среднем клиенты продолжают развивать свои идеи с нами
-                        .about__block.about__block_padd3
-                            .about__numberblock
-                                img.about__number5(src="./images/i/8.svg", alt="")
-                                img.about__number6(src="./images/i/2.svg", alt="")
-                                img.about__number7(src="./images/i/pr.svg", alt="")
-                            .about__title
-                                span.about__titletext Показатель
-                            .about__descriptionblock
-                                span.about__descriptiontext У разработанных нами приложений рейтинг 4 звезды и выше
-
-        section.cyclecontent
-            .main
-                .cycle   
-                    .cycle__supertitleblock
-                        span.supertitle.supertitle_grey AppsStudio
-                    .cycle__titleblock
-                        span.title Полный цикл 
-                            br
-                            | студии разработки 
-                            br
-                            | мобильных приложений
-                    .cycle__blockblocks
-                        .cycle__block
-                            .cycle__number
-                                span.cycle__numbertext 01
-                            .cycle__icon
-                                img.cycle__icon1(src="./images/icon1.png", alt="")
-                            .cycle__descriptionblock
-                                span.cycle__descriptiontext Проектирование 
-                                    br
-                                    | UI/UX
-                        .cycle__block
-                            .cycle__number
-                                span.cycle__numbertext 02
-                            .cycle__icon
-                                img.cycle__icon2(src="./images/icon2.png", alt="")
-                            .cycle__descriptionblock
-                                span.cycle__descriptiontext Дизайн 
-                                    br
-                                    | UI/UX
-                        .cycle__block
-                            .cycle__number
-                                span.cycle__numbertext 03
-                            .cycle__icon
-                                img.cycle__icon3(src="./images/icon3.png", alt="")
-                            .cycle__descriptionblock
-                                span.cycle__descriptiontext Клиентская часть 
-                                    br
-                                    | (iOS, Android, UWP)
-                        .cycle__block
-                            .cycle__number
-                                span.cycle__numbertext 04
-                            .cycle__icon
-                                img.cycle__icon4(src="./images/icon4.png", alt="")
-                            .cycle__descriptionblock
-                                span.cycle__descriptiontext Серверная часть 
-                                    br
-                                    | (Веб-сервис, БД, RESTful API) 
-                        .cycle__block
-                            .cycle__number
-                                span.cycle__numbertext 05
-                            .cycle__icon
-                                img.cycle__icon3(src="./images/icon5.png", alt="")
-                            .cycle__descriptionblock
-                                span.cycle__descriptiontext Машинное обучение 
-                                    br
-                                    | (Нейронные сети, Deep Learning)
-                        .cycle__block
-                            .cycle__number
-                                span.cycle__numbertext 06
-                            .cycle__icon
-                                img.cycle__icon3(src="./images/icon6.png", alt="")
-                            .cycle__descriptionblock
-                                span.cycle__descriptiontext Интеграция со сторонними 
-                                    br
-                                    | API системами
-                        .cycle__block
-                            .cycle__number
-                                span.cycle__numbertext 07
-                            .cycle__icon
-                                img.cycle__icon7(src="./images/icon7.png", alt="")
-                            .cycle__descriptionblock
-                                span.cycle__descriptiontext Веб-сайт 
-                                    br
-                                    | (Админ-панель)
-                        .cycle__block
-                            .cycle__number
-                                span.cycle__numbertext 08
-                            .cycle__icon
-                                img.cycle__icon3(src="./images/icon8.png", alt="")
-                            .cycle__descriptionblock
-                                span.cycle__descriptiontext Тестирование и отладка 
-                                    br 
-                                    | QA/Q
-
-        section.conceptcontent
-            .main
-                .concept
-                    .concept__content
-                        .concept__left
-                            .concept__titleblock
-                                span.title.title_white Концепт приложения 
-                                    br
-                                    | для бизнеса 
-                                    br
-                                    | за 3 условия
-                            .concept__buttonblock
-                                .button.button_widths
+                                    span call me
+                    .header__logo
+                        img(src="./images/logo.png", alt="")
+                    .header__burger.humburger#humburger 
+                        .header__line1#line1
+                        .header__line2#line2
+                        .header__line3#line3
+                    .header__menuadpt#menuadpt 
+                        .header__menu.header__menu_adptitem
+                            a(href="./index.html") home
+                        .header__menu.header__menu_adptitem
+                            a(href="#about") about us
+                        .header__menu.header__menu_adptitem
+                            a(href="#packages") packages
+                        .header__menu.header__menu_adptitem
+                            a(href="#fqu") faq
+                        .header__menu.header__menu_adptitem
+                            a(href="#contact") contacts
+                        .header__contacts
+                            .header__phoneblock
+                                .header__imgblock   
+                                    img(src="./images/call.png", alt="")
+                                    .header__phonetext
+                                        span Phone:
+                                .header__number
+                                    span (093) 555 73 78
+                            .header__buttonblock
+                                .button
                                     a(href="#")
-                                        span подробнее
-                        .concept__right
-                            .concept__conceptblock
-                                .concept__nameblock
-                                    span.concept__nametext Концепт
-                                .concept__imgblock
-                                    img.concept__img(src="./images/concept.png", alt="")
-                            .concept__designblock
-                                .concept__nameblock
-                                    span.concept__nametext Дизайн
-                                .concept__imgblock
-                                    img.concept__img(src="./images/design.png", alt="")
-                    .concept__supertitleblock
-                        span.supertitle.supertitle_blue Kонцепция
-
-        section.discountcontent
-            .main
-                .discount 
-                    .discount__titleblock
-                        span.title.title_whitemini Скидка для стартап проекта  
-                            br
-                            | с объемом от 1 000 
-                            span.novi
-                            | часов
-                    .discount__content
-                        span.discount__contenttext
-                            span.novi Скидка
-                            |  300 000 
-                            span ₽
-                    .discount__blockbutton
-                        .button.button_widthm
-                            a(href="#")
-                                span подробнее
-        
-        section.assessmentcontent
-            .main
-                .assessment
-                    .assessment__titleblock
-                        span.title.title_assessment Заполнить бриф для оценки реально просто
-                    .assessment__manual
-                        span 1. Отметьте нужные платформы
-                        span 2. Укажите, чем занимаетесь, и на кого смотреть
-                        span 3. Опишите идею, либо прикрепите требования
-                    .assessment__blocklinkbuttons
-                        .assessment__linkblock
-                            a.assessment__aple(href="#") 
-                                img.assessment__img0(src="./images/i/aple.svg", alt="")
-                                span.assessment__text1 Скачать из 
-                                span.assessment__text2 App Store
-                        .assessment__linkblock
-                            a.assessment__play(href="#") 
-                                img.assessment__img1(src="./images/play.png", alt="")
-                                img.assessment__img2(src="./images/googleplay.png", alt="")
-                                span.assessment__text1 Доступно в
-
-        section.formcontent
-            include ../common/form.pug
-            
-        footer.footercontent
-            include ../common/footer.pug
-
-
-
-
-                
-
-
+                                        span call me
                     
 
+        section.sectiononecontent
+            .wrapper
+                .sectionone
+                    .sectionone__titleblock
+                        span.title.title_big In love we trust
+
+        section.sectiontwocontent
+            .wrapper
+                .sectiontwo
+                    .sectiontwo__left
+                        .sectiontwo__titleblock
+                            span.title#about We will make unforgettable wedding for You
+                        .sectiontwo__descriptionblock
+                            .sectiontwo__blocktext1
+                                p A beautiful ceremony for newlyweds and their closest guests.  We offer an entirely new product on the existing market of wedding agencies business. The main distinctive feature is that our services are aimed at those who don’t wish to wait long, be engaged into long-lasting tiresome arrangements and those who want to estimate the event’s budget.
+                            .sectiontwo__blocktext2
+                                p We offer a set complex solution, namely three locations up to your choice designed in various styles and three packages, which include all attributes of a wedding ceremony.
+                        .sectiontwo__buttonblock
+                            .button.button_greyb
+                                a(href="#")
+                                    span.order order
+                    .sectiontwo__right 
+
+        section.sectionthreecontent
+            .wrapper
+                .sectionthree
+                    .sectionthree__blocktitle
+                        span.title Benefits for our clients:
+                    .sectionthree__blockblocks
+                        .sectionthree__block1
+                            .sectionthree__blockimg
+                                img(src="./images/calendar.png", alt="")
+                            .j
+                                .sectionthree__blockminititle
+                                    span Time saving 
+                                .sectionthree__blockdescription
+                                    span  Aenean commodo ligula eget dolor. Aenean massa.
+                        .sectionthree__block2
+                            .sectionthree__blockimg
+                                img(src="./images/balloon.png", alt="")
+                            .j
+                                .sectionthree__blockminititle
+                                    span Stress free 
+                                .sectionthree__blockdescription
+                                    span  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        .sectionthree__block3
+                            .sectionthree__blockimg
+                                img(src="./images/honeymoon.png", alt="")
+                            .j
+                                .sectionthree__blockminititle
+                                    span Escape in the summer 
+                                .sectionthree__blockdescription
+                                    span  Aenean commodo ligula eget dolor. Aenean massa. 
+
+        section.sectionfourcontent
+            .wrapper
+                .sectionfour
+                    .sectionfour__blocktitle    
+                        span.title#packages Your packages :
+                        .sectionfour__string
+                    
+                    .sectionfour__blockblocks
+                        .sectionfour__block
+                            .sectionfour__blockimg
+                                img(src="./images/flowers1.png", alt="")
+                            .sectionfour__blockcontent
+                                .sectionfour__blockminititle
+                                    span.title.title_m Romance
+                                .sectionfour__blockdescription
+                                    span Romance Package includes full service for a couple and two guests in the restaurant.
+                                .sectionfour__blocknumber
+                                    span
+                                        | 2 790$ 
+                                        span + TAX
+                                .sectionfour__blockbuttons
+                                    .sectionfour__button1
+                                        .button.button_white.b-container
+                                            a(href="javascript:PopUpShow()", class="info")
+                                                span.order more info
+                                        #popup1.b-popup
+                                            .b-popup-content
+                                                | Text in Popup
+                                                a(href='javascript:PopUpHide()') Hide popup
+                                    .sectionfour__button2
+                                        .button.button_greysm
+                                            a(href="#")
+                                                span.order order
+                    
+                        .sectionfour__block
+                            .sectionfour__blockimg
+                                img(src="./images/flowers2.png", alt="")
+                            .sectionfour__blockcontent
+                                .sectionfour__blockminititle
+                                    span.title.title_m Tenderness
+                                .sectionfour__blockdescription
+                                    span Tenderness Package includes full service for a couple and two guests in the park.
+                                .sectionfour__blocknumber
+                                    span
+                                        | 2 990$ 
+                                        span + TAX
+                                .sectionfour__blockbuttons
+                                    .sectionfour__button1
+                                        .button.button_white
+                                            a(href="#openModal2", class="info")
+                                                span.order more info
+                                        #openModal2.modalDialog
+                                            div
+                                                a.close1(href='#close', title='Close') X
+                                                |       Сюда код или текст
+                                    .sectionfour__button2
+                                        .button.button_greysm
+                                            a(href="#")
+                                                span.order order
+                        .sectionfour__block
+                            .sectionfour__blockimg
+                                img(src="./images/flowers3.png", alt="")
+                            .sectionfour__blockcontent
+                                .sectionfour__blockminititle
+                                    span.title.title_m On the Sand
+                                .sectionfour__blockdescription.sectionfour__blockdescription_mrg
+                                    span On the Sand Package includes full service for a couple and two guests, including a marriage registration on the beach
+                                .sectionfour__blocknumber
+                                    span
+                                        | 3 290$ 
+                                        span + TAX
+                                .sectionfour__blockbuttons
+                                    .sectionfour__button1
+                                        .button.button_white
+                                            a(href="#openModal2", class="info")
+                                                span.order more info
+                                        #openModal2.modalDialog
+                                            div
+                                                a.close1(href='#close', title='Close') X
+                                                |       Сюда код или текст
+                                    .sectionfour__button2
+                                        .button.button_greysm
+                                            a(href="#")
+                                                span.order order
+
+        section.sectionfivecontent
+            .wrapper
+                .sectionfive
+                    .sectionfive__blocktitle
+                        span.title Reviews of Dear Clients
+                        .sectionfour__string
+                    .swiper-container
+                        .swiper-wrapper
+                            .swiper-slide(style="none")
+                                .sectionfive__blockminititle
+                                    span.title.title_mini Anabel Green
+                                    .sectionfive__bottomtext
+                                        span — wif
+                                .sectionfive__blockdescription
+                                    span I hardly believed that someone could surprise me, but so you did. I didn’t expect formalities would be so simple and fast…. The choice of the restaurant and ceremonial decorations were so cute.
+                                .sectionfive__sliderblock.slider#slider  
+                                    div
+                                        img(src="./images/5.jpg", alt="")
+                                    div
+                                        img(src="./images/6.jpg", alt="")
+                                    div
+                                        img(src="./images/2.jpg", alt="")
+                                    div
+                                        img(src="./images/3.jpg", alt="")
+                                    div 
+                                        img(src="./images/4.jpg", alt="")
+                            .swiper-slide
+                                .sectionfive__blockminititle
+                                    span.title.title_mini Anabel Green
+                                    .sectionfive__bottomtext
+                                        span — wif
+                                .sectionfive__blockdescription
+                                    span 2 I hardly believed that someone could surprise me, but so you did. I didn’t expect formalities would be so simple and fast…. The choice of the restaurant and ceremonial decorations were so cute.
+                                .sectionfive__sliderblock.slider#slider  
+                                    div
+                                        img(src="./images/5.jpg", alt="")
+                                    div
+                                        img(src="./images/6.jpg", alt="")
+                                    div
+                                        img(src="./images/2.jpg", alt="")
+                                    div
+                                        img(src="./images/3.jpg", alt="")
+                                    div 
+                                        img(src="./images/4.jpg", alt="")
+                            .swiper-slide
+                                .sectionfive__blockminititle
+                                    span.title.title_mini Anabel Green
+                                    .sectionfive__bottomtext
+                                        span — wif
+                                .sectionfive__blockdescription
+                                    span 3 I hardly believed that someone could surprise me, but so you did. I didn’t expect formalities would be so simple and fast…. The choice of the restaurant and ceremonial decorations were so cute.
+                                .sectionfive__sliderblock.slider#slider  
+                                    div
+                                        img(src="./images/5.jpg", alt="")
+                                    div
+                                        img(src="./images/6.jpg", alt="")
+                                    div
+                                        img(src="./images/2.jpg", alt="")
+                                    div
+                                        img(src="./images/3.jpg", alt="")
+                                    div 
+                                        img(src="./images/4.jpg", alt="")
+                    .sectionfive__buttonblock
+                        .sectionfive__button.swiper-button-prev#slidprev
+                            img(src="./images/l.png", alt="")
+                        .sectionfive__button.swiper-button-next#slidnext
+                            img(src="./images/r.png", alt="")
+
+        section.sectionsixcontent
+            .wrapper
+                .sectionsix 
+                    .sectionsix__blocktitle
+                        span.title Happy moments of Our Clients
+                        .sectionfour__string
+                    .sectionsix__blockfotos
+                        .my-gallery(itemscope='', itemtype='')               
+                            figure.my-gallery__foto1(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                a(href='./images/1-big.jpg', itemprop='contentUrl', data-size='1024x1024')
+                                    img(src='./images/1-big.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  1
+                            figure.my-gallery__foto2(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                a(href='./images/5-big.jpg', itemprop='contentUrl', data-size='1024x683')
+                                    img(src='./images/5-big.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption 3 
+                            figure.my-gallery__figur.my-gallery__foto1(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                a(href='./images/4-big.jpg', itemprop='contentUrl', data-size='964x1024')
+                                    img(src='./images/4-big.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption 2                
+                            //- figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                              
+                            figure.my-gallery__foto1(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                a(href='./images/3-big.jpg', itemprop='contentUrl', data-size='1024x768')
+                                    img(src='./images/3-big.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption 4
+                            figure.my-gallery__foto1(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                a(href='./images/2-big.jpg', itemprop='contentUrl', data-size='1024x768')
+                                    img(src='./images/2-big.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption 5
+                            //- figure(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                
                 
+                        .pswp(tabindex='-1', role='dialog', aria-hidden='true')
+                            //
+                                Background of PhotoSwipe.
+                                It's a separate element, as animating opacity is faster than rgba().
+                            .pswp__bg
+                            // Slides wrapper with overflow:hidden.
+                            .pswp__scroll-wrap
+                                // Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.
+                                // don't modify these 3 pswp__item elements, data is added later on.
+                                .pswp__container
+                                    .pswp__item
+                                    .pswp__item
+                                    .pswp__item
+                                // Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
+                                .pswp__ui.pswp__ui--hidden
+                                    .pswp__top-bar
+                                        // Controls are self-explanatory. Order can be changed.
+                                        .pswp__counter
+                                        button.pswp__button.pswp__button--close(title='Close (Esc)')
+                                        button.pswp__button.pswp__button--share(title='Share')
+                                        button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+                                        button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+                                        // Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR
+                                        // element will get class pswp__preloader--active when preloader is running
+                                        .pswp__preloader
+                                            .pswp__preloader__icn
+                                                .pswp__preloader__cut
+                                                    .pswp__preloader__donut
+                                    .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+                                        .pswp__share-tooltip
+                                    button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
+                                    button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+                                    .pswp__caption
+                                        .pswp__caption__center
+                            
+
+        section.sectionsevencontent
+            .wrapper
+                .sectionseven 
+                    .sectionseven__blocktitle
+                        span.title#fqu Frequently asked Questions
+                        .sectionfour__string
+                    .sectionseven__blockblocks
+                        .sectionseven__block1
+                            p What documents are required for the marriage registration reception?
+                            img(src="./images/sevenicon1.png", alt="")
+                        .sectionseven__block2
+                            p How long does the ceremony last?
+                            img(src="./images/sevenicon2.png", alt="")
+                        .sectionseven__block3
+                            p Does the package include tickets and accommodation?
+                            img(src="./images/sevenicon3.png", alt="")
+                        .sectionseven__block4
+                            p What documents certifying the marriage does a couple get after the ceremony?
+                            img(src="./images/sevenicon4.png", alt="")
+                        .sectionseven__block5
+                            p Can we increase the number of guests?
+                            img(src="./images/sevenicon5.png", alt="")
+                        .sectionseven__block6
+                            p Can we postpone the starting time of the ceremony?
+                            img(src="./images/sevenicon6.png", alt="")
+                        .sectionseven__block7
+                            p Is return transfer provided?
+                            img(src="./images/sevenicon7.png", alt="")
+                        .sectionseven__block8
+                            p If I have food allergy?
+                            img(src="./images/sevenicon8.png", alt="")
+                        .sectionseven__block9
+                            p Can I get money back in case of bad weather?
+                            img(src="./images/sevenicon9.png", alt="")
+                        .sectionseven__block10
+                            p Can we register /conduct a single-sex marriage reception in Florida?
+                            img(src="./images/sevenicon10.png", alt="")
+
+        section.sectionformcontent
+            .wrapper
+                .form
+                    .form__content
+                        .form__blocktitle
+                            span.title#contact Contact Us
+                            a(name="Contact Us")
+                            .sectionfour__string
+                        .form__blockdescription
+                            p
+                                | For number - 
+                                span (093) 555 73 78.
+                                |  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                        .form__blockform
+                            .form__inputblock
+                                input.form__input(type="text", placeholder="Phone")
+                                input.form__input(type="text", placeholder="E-mail")
+                            .form__textareablock
+                                textarea( placeholder="Youre question")
+                            .form__buttonblock
+                                .button.button_greyb
+                                            a(href="#")
+                                                span.order contact us
+
+        section.footer
+            .footer__block
+                span 2018 WG Paradise. All Rights Reserved.
+
+
+    script.
+        $(document).ready(function(){
+        PopUpHide();
+        });
+        function PopUpShow(){
+        $("#popup1").show();
+        }
+        function PopUpHide(){
+        $("#popup1").hide();
+        }
+
+
+        

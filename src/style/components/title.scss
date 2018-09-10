@@ -1,30 +1,30 @@
 .title{
-    font-size: em(66);
-    font-family: proximanova;
-    font-weight: 900;
-    color: $greytext;
-    line-height: 1;
-    &_white{
-        color: $white;
-        line-height: 60%;
+    font-size: em(50);
+    font-family: gloss;
+    font-weight: 400;
+    color: #503d3d;
+    line-height: em(20);
+    &_m{
+        font-size: em(36);
     }
 
-    &_whitemini{
-        color: $white;
-        line-height: 90%;
+    &_mini{
+        font-size: em(30);
+        margin-left: wm(20);
     }
 
-    &_letter{
-        letter-spacing: em(-0.5);
-    }
-
-    // &_assessment{
-    //     line-height: em(64);
-    // }
-}
-
-@media screen and (max-width: 1200px) {
-    .title{
+    &_big{
         font-size: em(80);
+        line-height: em(20);
+        color: $white;
     }
+
 }
+
+    
+
+// @media screen and (max-width: 1200px) {
+//     .title{
+//         font-size: em(80);
+//     }
+// }

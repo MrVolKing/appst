@@ -1,0 +1,293 @@
+.sectionsevencontent{
+    .wrapper{
+        padding: 0;
+    }
+}
+
+.sectionseven{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: em(59) 0 em(49) 0;
+    background-color: #f7f7f7;
+
+    &__blocktitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: em(40);
+    }
+
+    &__blockblocks{
+        width: em(1032);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__block1{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 em(40) em(25) em(24);
+        width: 190px;
+        height: 191px;
+        margin-bottom: em(20);
+        background-color: #8989a3;
+        p{
+            font-size: em(14);
+            text-transform: uppercase;
+            color: $white;
+        }
+        img{
+            width: em(24);
+            height: em(20);
+            position: absolute;
+            top: em(22);
+            right: em(20);
+        }
+    }
+
+    &__block2{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 em(40) em(25) em(24);
+        width: 190px;
+        height: 191px;
+        margin-bottom: em(20);
+        background-color: $white;
+        p{
+            font-size: em(14);
+            text-transform: uppercase;
+            color: #4b4949;
+        }
+        img{
+            width: em(16);
+            height: em(21);
+            position: absolute;
+            top: em(22);
+            right: em(20);
+        }
+    }
+
+    &__block3{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 em(40) em(25) em(24);
+        width: 190px;
+        height: 191px;
+        margin-bottom: em(20);
+        background-color: $white;
+        p{
+            font-size: em(14);
+            text-transform: uppercase;
+            color: #4b4949;
+        }
+        img{
+            width: em(34);
+            height: em(21);
+            position: absolute;
+            top: em(22);
+            right: em(20);
+        }
+    }
+
+    &__block4{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 em(40) em(25) em(24);
+        width: 190px;
+        height: 191px;
+        margin-bottom: em(20);
+        background-color: $white;
+        p{
+            font-size: em(14);
+            text-transform: uppercase;
+            color: #4b4949;
+        }
+        img{
+            width: em(18);
+            height: em(23);
+            position: absolute;
+            top: em(22);
+            right: em(20);
+        }
+    }
+
+    &__block5{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 em(40) em(25) em(24);
+        width: 190px;
+        height: 191px;
+        margin-bottom: em(20);
+        background-color: $white;
+        p{
+            font-size: em(14);
+            text-transform: uppercase;
+            color: #4b4949;
+        }
+        img{
+            width: em(21);
+            height: em(21);
+            position: absolute;
+            top: em(22);
+            right: em(20);
+        }
+    }
+
+    &__block6{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 em(40) em(25) em(24);
+        width: 190px;
+        height: 191px;
+        margin-bottom: em(20);
+        background-color: $white;
+        p{
+            font-size: em(14);
+            text-transform: uppercase;
+            color: #4b4949;
+        }
+        img{
+            width: em(21);
+            height: em(21);
+            position: absolute;
+            top: em(22);
+            right: em(20);
+        }
+    }
+
+    &__block7{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 em(40) em(25) em(24);
+        width: 190px;
+        height: 191px;
+        margin-bottom: em(20);
+        background-color: $white;
+        p{
+            font-size: em(14);
+            text-transform: uppercase;
+            color: #4b4949;
+        }
+        img{
+            width: em(21);
+            height: em(21);
+            position: absolute;
+            top: em(22);
+            right: em(20);
+        }
+    }
+
+    &__block8{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 em(40) em(25) em(24);
+        width: 190px;
+        height: 191px;
+        margin-bottom: em(20);
+        background-color: $white;
+        p{
+            font-size: em(14);
+            text-transform: uppercase;
+            color: #4b4949;
+        }
+        img{
+            width: em(21);
+            height: em(21);
+            position: absolute;
+            top: em(22);
+            right: em(20);
+        }
+    }
+
+    &__block9{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 em(40) em(25) em(24);
+        width: 190px;
+        height: 191px;
+        margin-bottom: em(20);
+        background-color: $white;
+        p{
+            font-size: em(14);
+            text-transform: uppercase;
+            color: #4b4949;
+        }
+        img{
+            width: em(11);
+            height: em(21);
+            position: absolute;
+            top: em(22);
+            right: em(20);
+        }
+    }
+
+    &__block10{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 em(40) em(25) em(24);
+        width: 190px;
+        height: 191px;
+        margin-bottom: em(20);
+        background-color: $white;
+        p{
+            font-size: em(14);
+            text-transform: uppercase;
+            color: #4b4949;
+        }
+        img{
+            width: em(27);
+            height: em(19);
+            position: absolute;
+            top: em(22);
+            right: em(20);
+        }
+    }
+
+}
+
+// @media screen and (max-width: 1500px) {
+//     .sectionseven__blockblocks{
+//         width: 1115px;
+//     }
+// }
+
+
+@media screen and (max-width: 767px) {
+    .sectionseven{
+
+        &__blocktitle{
+            text-align: center;
+            span{
+                font-size: 27px;
+                line-height: 46px
+            }
+        }
+
+        &__block1, &__block2, &__block3, &__block4, &__block5, &__block6, &__block7, &__block8, &__block9, &__block10{
+            width: 100px;
+            height: 100px;
+            p{
+                font-size: 9px;
+            }
+
+            img{
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        
+    }
+}

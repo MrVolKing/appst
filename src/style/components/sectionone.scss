@@ -1,0 +1,39 @@
+.sectionone{
+    background-image: url(../images/fon1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: em(823);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: em(189);
+    // span{
+    //     font-size: em(80);
+    //     font-weight: 400;
+        
+    // }
+
+    &__titleblock{
+        width: em(380);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .sectionone{
+        margin-top: em(100);
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sectionone{
+        &__titleblock{
+            width: em(400);
+            span{
+                font-size: em(90);
+            }
+        }
+    }
+}
+
